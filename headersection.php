@@ -2,7 +2,7 @@
 
 <?php 
 $listsection = array('General','Aide','Divers','FAQ'); 
-affichersection($section);
+displaysection($section);
 ?>
 <br>
 
@@ -10,7 +10,7 @@ affichersection($section);
 <?php
 
 
-function affichersection($listsection)
+function displaysection($listsection)
 {
 	echo "<ul class=\"section\">";
 	foreach($listsection as $element)
