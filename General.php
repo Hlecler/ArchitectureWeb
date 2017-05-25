@@ -25,11 +25,13 @@
 <body>
 
 <?php
-include("headersection.php");
+  file_get_contents("headersection.php");
 ?>
+<!-- HTML CODE BELOW -->
 
+<!-- END HTML CODE -->
 <?php 
-include("footer.php");
+  file_get_contents("footer.php");
 ?>
 </body>
 

@@ -1,3 +1,7 @@
+<?php
+  //Get the functions you wanted
+  include 'headersection.php';
+?>
 <!DOCTYPE html>
 <html lang="fr" ng-app="CodeAnon">
 <head>
@@ -25,11 +29,17 @@
 <body>
 
 <?php
-include("headersection.php");
+  //Copy file
+  file_get_contents("headersection.php");
 ?>
 
-<?php 
-include("footer.php");
+<!-- HTML CODE BELOW -->
+
+<!-- END HTML CODE -->
+  
+<?php
+  //Copy file
+  file_get_contents("footer.php");
 ?>
 </body>
 

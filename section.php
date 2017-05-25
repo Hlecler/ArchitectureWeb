@@ -1,11 +1,8 @@
 <?php 
 $listsection = array('General','Aide','Divers','FAQ'); 
 affichersection($listsection);
-?>
-<br>
 
-
-<?php
+echo '<br />';
 
 //Permet d'afficher chaque section existante dans une liste html
 function affichersection($section)

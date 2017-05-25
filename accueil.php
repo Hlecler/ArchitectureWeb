@@ -29,11 +29,15 @@
 <h2> Liste des sections </h2>
 
 <?php 
-include ("section.php");
+  file_get_contents('section.php');
 ?>
+  
+<!-- HTML CODE BELOW -->
 
+<!-- END HTML CODE -->
+  
 <?php 
-include ('footer.php'); 
+  file_get_contents('footer.php'); 
 ?>
 
 </body>
