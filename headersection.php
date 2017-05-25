@@ -1,7 +1,7 @@
 <link rel="stylesheet" type="text/css" href="css/headersection.css">
 
 <?php 
-$listsection = array('General','Aide','Divers','FAQ'); 
+$listsession = array('General','Aide','Divers','FAQ'); 
 displaysection($section);
 ?>
 <br>
@@ -10,10 +10,10 @@ displaysection($section);
 <?php
 
 
-function displaysection($listsection)
+function displaysession($listsession)
 {
-	echo "<ul class=\"section\">";
-	foreach($listsection as $element)
+	echo "<ul class=\"session\">";
+	foreach($listsession as $element)
 	{
 		echo "<li><a href=\"$element.php\">$element</a></li>";
 	}
