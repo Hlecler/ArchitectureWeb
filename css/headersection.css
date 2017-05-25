@@ -1,0 +1,43 @@
+h1
+{
+	margin: 0;
+	text-align: center;
+	color: gold;
+	font-size: 40pt;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-image: url("titre_fond.jpg");
+}
+
+.section
+{
+	list-style-type: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
+
+.section li
+{
+	float: left;
+}
+
+.section a
+{
+	color: gainsboro;
+	padding: 10px 20px;
+	text-decoration: none;
+	display: block;
+	font-family: Arial;
+}
+
+.section, .section a
+{
+	background-color: rgb(40,50,100);
+}
+
+.section a:hover
+{
+	background-color: rgb(70,80,140);
+	color: red;
+}
