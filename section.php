@@ -11,7 +11,7 @@
 		<?php include 'header.php'
 			if(isset($_GET['idsection']))
 			{
-        		$dbSection = connect();        
+        			$dbSection = connect();        
 				$reponse = $dbSection->prepare('SELECT * FROM Thread WHERE idsection = ?');
 				$reponse->execute(array($_GET['idsection']));
 			}
@@ -21,19 +21,14 @@
   
   <body>
 <?php
- 	include("headersection.php");
-	include("header.php");
-    while($donnees = $reponse->fetch())
-    {
-    echo $donnees['Title'].':'.$donnees['Content'].'\n';
-    }
-    ?>
-
-<!-- HTML CODE BELOW -->
-
-<!-- END HTML CODE -->
-<?php 
-  include"footer.php";
+ 	include 'headersection.php';
+	include 'header.php';
+  	while($donnees = $reponse->fetch())
+	{
+		echo $donnees['Title'].':'.$donnees['Content'].'\n';
+ 	}
+	$reponse->closeCursor();
+	include 'footer.php';
 ?>
 </body>
 
