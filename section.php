@@ -23,7 +23,8 @@
 <?php
  	include 'headersection.php';
 	include 'header.php';
-  	while($donnees = $ans->fetch())
+  	include 'newtopic.php';
+	while($donnees = $ans->fetch())
 	{
 		echo '<p class="post"><a href="thread.php?idthread='.$donnees['idthread'].'">'.$donnees['Title'].'</a></p>';
 		echo '<p class="desc">'.$donnees['Content'].'</p>';
