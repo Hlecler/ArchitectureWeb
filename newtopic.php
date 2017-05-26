@@ -4,7 +4,7 @@
 	</head>
 	<body>
 		<!-- HTML CODE BELOW -->
-		<form action="/r_newtopic.php", method="post">
+		<form action="/r_newtopic.php" method="post">
 			<b>Sujet:<br> </b><input type="text" name="subject"><br />
 			<br/>
 			<b>Message<br></b>
