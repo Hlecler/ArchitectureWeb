@@ -7,7 +7,7 @@
 	$reponse = $bdSection->query('SELECT * FROM section');
 	while($donnees = $reponse -> fetch())
 	{?>
-			<li><a href=<?php echo 'section.php'.'?'.'idsection='.$donnees['idsection']; ?>><?php echo $donnees['sectionname']; ?></a></li>
+			<li><a href=<?php echo '"section.php'.'?'.'idsection='.$donnees['idsection'].'"'; ?>> <?php echo $donnees['sectionname']; ?></a></li>
 
 <?php	}
 	$reponse->closeCursor();
