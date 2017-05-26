@@ -21,7 +21,7 @@
   
   <body>
 <?php
- 	//include 'headersection.php';
+ 	include 'headersection.php';
 	include 'header.php';
   	while($donnees = $reponse->fetch())
 	{
