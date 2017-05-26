@@ -14,6 +14,5 @@
 			echo "<li><a href=\"$donnees['sectionname'].php\">$donnees['sectionname']</a></li>";
 	}
 	$reponse->closeCursor();
-	?>
 	echo "</ul>";
 ?>
