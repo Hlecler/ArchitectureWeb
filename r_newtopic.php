@@ -17,4 +17,4 @@
 	$dbquery->exec('INSERT INTO Thread(Title, Content, idsection) VALUES ($subject, $message, $idsec)');
 	
 	redirect();
-<?php
+?>
