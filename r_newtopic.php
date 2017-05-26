@@ -10,6 +10,7 @@
 	$idsec = $_GET['idsection'];
 	
 	if(empty($subject) or empty($message)) {
+		echo 'test';
 		redirect();
 	}
 	
