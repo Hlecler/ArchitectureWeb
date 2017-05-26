@@ -1,5 +1,6 @@
 <link rel="stylesheet" type="text/css" href="css/headersection.css">
 
+<body>
 <?php 
 $listsection = array('General','Aide','Divers','FAQ'); 
 affichersection($section);
@@ -17,3 +18,4 @@ function affichersection($listsection)
 }
 
 ?>
+</body>
