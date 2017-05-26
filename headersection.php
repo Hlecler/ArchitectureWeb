@@ -3,7 +3,7 @@
 <body>
 <?php 
 $listsection = array('General','Aide','Divers','FAQ'); 
-affichersection($section);
+affichersection($listsection);
 
 echo '<br />';
 
