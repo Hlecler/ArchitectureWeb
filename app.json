@@ -1,0 +1,19 @@
+{
+  "name": "CodeAnon",
+  "scripts": {
+  },
+  "env": {
+    "ADMINIUM_URL": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    "adminium",
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+
+  ]
+}
