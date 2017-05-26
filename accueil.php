@@ -32,7 +32,7 @@
 <h2> Liste des sections </h2>
   
 <?php 
-  include('section.php');
+  include('sectionlist.php');
 ?>
   
 <!-- HTML CODE BELOW -->
