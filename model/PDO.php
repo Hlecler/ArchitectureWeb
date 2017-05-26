@@ -9,6 +9,6 @@ function connect()
 	{
 			die('Erreur : ' . $e->getMessage());
 	}
-	return($bd);
+	return($bdd);
 }
 ?>
