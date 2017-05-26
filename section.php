@@ -25,7 +25,7 @@
 	include 'header.php';
   	while($donnees = $ans->fetch())
 	{
-		echo '<p class="post"><a href="thread.php?idthread='.$donnees['Idthread'].'>.'$donnees['Title'].'</a></p>';
+		echo '<p class="post"><a href="thread.php?idthread='.$donnees['Idthread'].'>'.$donnees['Title'].'</a></p>';
 		echo '<p class="desc">'.$donnees['Content'].'</p>';
 		echo '<br>';
  	}
