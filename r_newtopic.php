@@ -7,14 +7,14 @@
 	
 	$subject = $_POST['subject'];
 	$message = $_POST['message'];
-	$idsection = $_GET['idsection'];
+	$idsec = $_GET['idsection'];
 	
 	if(empty($subject) or empty($message)) {
 		redirect();
 	}
 	
 	$dbquery = connect();
-	$dbquery->exec('INSERT INTO Thread(Title, Content, idsection) VALUES ($subject, $message, $idsection)');
+	$dbquery->exec('INSERT INTO Thread(Title, Content, idsection) VALUES ($subject, $message, $idsec)');
 	
 	redirect();
 <?php
