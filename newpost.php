@@ -5,6 +5,7 @@
 	<body>
 		<?php
 			include 'headersection.php';
+			include 'header.php';
 		?>
 		<!-- HTML CODE BELOW -->
 		<form id="newpostform" action="r_post.php", method="post">
