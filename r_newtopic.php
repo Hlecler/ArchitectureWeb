@@ -1,6 +1,6 @@
 <?php
 	require_once 'model/PDO.php';
-	
+	require_once 'model/newthread.php';
 	function redirect() {
 		header('Location: accueil.php');
 	}
@@ -12,8 +12,7 @@
 	if(empty($subject) or empty($message)) {
 		redirect();
 	}
-	
 	$dbquery = connect();
-	$dbquery->exec('INSERT INTO Thread (Title, Content, idsection) VALUES ($subject, $message, $idsec)');
+	newthread($subject, $message, $idsec);
 	redirect();
 ?>
