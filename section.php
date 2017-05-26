@@ -7,6 +7,7 @@
 <meta name="Description" content="Forum based website created for a web architecture project by LECLER Hugo">
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 <title>CodeAnon - Section</title>
+<?php
 			require_once 'model/PDO.php';
 			if(isset($_GET['idsection']))
 			{
@@ -14,7 +15,7 @@
 				$reponse = $dbSection->prepare('SELECT * FROM Thread WHERE idsection = ?');
 				$reponse->execute(array($_GET['idsection']));
 			}
-		?>
+?>
 </head>
  
   
