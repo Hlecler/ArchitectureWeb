@@ -27,14 +27,14 @@ li{
 
 .post
 {
-    outline-style: double;
+    outline-style: outset;
     outline-color: green;
     outline-width: 5px;
 }
 
 .desc
 {
-    outline-style: double;
+    outline-style: dotted;
     outline-color: blue;
     outline-width: 3px;
 }
