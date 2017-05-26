@@ -1,19 +1,19 @@
-					<ul type="section">
+					<ul type="disk">
 						<?php
 							try
 							{
-								$bdd = new PDO('pgsql:host=ec2-54-246-108-119.eu-west-1.compute.amazonaws.com;port=5432;dbname=d8mv81rvehr8or', 'wftpzmckvuzkzd','62630f127cd96b941e7d16720368016da8382ba48183c9f5c91825098e2914ea'));
+								$bdd = new PDO('pgsql:host=ec2-54-247-166-129.eu-west-1.compute.amazonaws.com;dbname=d8d5o1h0870hg', 'tkiiknfwbenkoe', '52a255680d0d2409a7ccefbd3da3cba1740f34c9e7e879d3d331faad1796ab02', array(PDO::ATTR_ERRMODE => PDO::	ERRMODE_EXCEPTION)); // Connexion à la bdd
 							}
 							catch (Exception $e)
 							{
 			        			die('Erreur : ' . $e->getMessage());
 							}
 		
-							$reponse = $bdd->query('SELECT idsection, sectionname FROM Section');
+							$reponse = $bdd->query('SELECT nomconst, idconst FROM CONSTELLATION WHERE hemisnord=b\'1\'');
 							while($donnees = $reponse->fetch())
 							{
 						?>
-								<li><a href=<?php echo 'General.php'.'?'.'id='.$donnees['idsection']; ?>><?php echo $donnees['sectionname']; ?></a></li>
+								<li><a href=<?php echo 'constellation.php'.'?'.'id='.$donnees['idconst']; ?>><?php echo $donnees['nomconst']; ?></a></li>
 						<?php
 							}
 							$reponse->closeCursor();
