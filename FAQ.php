@@ -29,17 +29,12 @@
 <body>
 
 <?php
-  //Copy file
-  file_get_contents("headersection.php");
+  include("headersection.php");
 ?>
-
 <!-- HTML CODE BELOW -->
 
 <!-- END HTML CODE -->
-  
-<?php
-  //Copy file
-  file_get_contents("footer.php");
+<?php 
+  include("footer.php");
 ?>
 </body>
-
