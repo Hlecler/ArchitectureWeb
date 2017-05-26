@@ -21,14 +21,14 @@
   
   <body>
 <?php
- 	/*include 'headersection.php';
-	include 'header.php';*/
+ 	include 'headersection.php';
+	include 'header.php';
   	while($donnees = $reponse->fetch())
 	{
 		echo $donnees['Title'].':'.$donnees['Content'].'\n';
  	}
 	$reponse->closeCursor();
-	//include 'footer.php';
+	include 'footer.php';
 ?>
 </body>
 
