@@ -1,4 +1,4 @@
-		<form action="/r_newtopic.php" method="post">
+		<form id="newtopicform" action="/r_newtopic.php" method="post">
 			<b>Sujet:<br> </b><input type="text" name="subject"><br />
 			<br/>
 			<b>Message<br></b>
