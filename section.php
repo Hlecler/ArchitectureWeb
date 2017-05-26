@@ -11,7 +11,7 @@
 			die('Erreur : ' . $e->getMessage());
 	}
 	$reponse = $bdd->query('SELECT * FROM CONSTELLATION');
-	while($donnees = $reponse->fetch());
+	while($donnees = $reponse->fetch())
 	{
 		?><li><a href=<?php echo 'constellation.php'.'?'.'id='.$donnees['idconst']; ?>><?php echo $donnees['nomconst']; ?></a></li>
 <?php	}
