@@ -8,13 +8,11 @@
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 <title>CodeAnon - Section</title>
 
-		<?php include("header.php")
+		<?php include 'header.php'
 			if(isset($_GET['idsection']))
 			{
-        $dbSection = connect();
-        
-				//$reponse = $bdd->query('SELECT * FROM CONSTELLATION WHERE idconst='.$_GET['id']);
-				$reponse = dbSection->prepare('SELECT * FROM Thread WHERE idsection = ?');
+        		$dbSection = connect();        
+				$reponse = $dbSection->prepare('SELECT * FROM Thread WHERE idsection = ?');
 				$reponse->execute(array($_GET['idsection']));
 			}
 		?>
@@ -30,16 +28,12 @@
     echo $donnees['Title'].':'.$donnees['Content'].'\n';
     }
     ?>
-</body>
-
-<body>
-
 
 <!-- HTML CODE BELOW -->
 
 <!-- END HTML CODE -->
 <?php 
-  include("footer.php");
+  include"footer.php";
 ?>
 </body>
 
