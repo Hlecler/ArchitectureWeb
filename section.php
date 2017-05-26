@@ -6,6 +6,7 @@
 	}
 	catch (Exception $e)
 	{
+			echo 'bonjour';
 			die('Erreur : ' . $e->getMessage());
 	}
 	$reponse = $bdSection->query('SELECT * FROM Section');
