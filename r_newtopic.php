@@ -2,7 +2,7 @@
 	require_once 'model/PDO.php';
 	
 	function redirect() {
-		header('Location: section.php?=$_GET['idsection']);
+		header('Location: accueil.php');
 	}
 	
 	$subject = $_POST['subject'];
@@ -17,3 +17,5 @@
 	$dbquery->exec('INSERT INTO Thread(Title, Content, idsection) VALUES (\'.$subject.', \'.$message.','.$idsection.'\');');
 	
 	redirect();
+<?php
+	
