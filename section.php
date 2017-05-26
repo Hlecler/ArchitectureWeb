@@ -2,7 +2,7 @@
 <?php
   require_once 'model/PDO.php';
   $bdSection = connect();
-  $listsection = $bd->query('SELECT sectionname from section');
+  $listsection = $bdd->query('SELECT sectionname from section');
 
 affichersection($listsection);
 
