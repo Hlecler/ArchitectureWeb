@@ -9,10 +9,10 @@
 <title>CodeAnon - Section</title>
 <?php
 			require_once 'model/PDO.php';
+			$dbSection = connect();
 			if(isset($_GET['idsection']))
-			{
-        			$dbSection = connect();        
-				$reponse = $dbSection->prepare('SELECT * FROM Thread WHERE idsection = ?');
+			{     
+				$reponse = $dbSection->prepare('SELECT * FROM Thread WHERE Idsection = ?');
 				$reponse->execute(array($_GET['idsection']));
 			}
 ?>
