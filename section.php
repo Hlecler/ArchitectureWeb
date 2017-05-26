@@ -1,4 +1,4 @@
-					<ul type="disk">
+					<ul type="section">
 						<?php
 							try
 							{
