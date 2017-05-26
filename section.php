@@ -13,7 +13,7 @@
 							while($donnees = $reponse->fetch())
 							{
 						?>
-								<li><a href=<?php echo 'General.php'.'?'.'id='.$donnees['Sectionname']; ?>><?php echo $donnees['Sectionname']; ?></a></li>
+								echo "<li><a href=\"$donnees['Sectionname'].php\"> $donnees['Sectionname']</a></li>";
 						<?php
 							}
 							$reponse->closeCursor();
