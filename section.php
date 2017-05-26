@@ -6,14 +6,13 @@
 	}
 	catch (Exception $e)
 	{
-			echo 'bonjour';
 			die('Erreur : ' . $e->getMessage());
 	}
 	$reponse = $bdSection->query('SELECT * FROM section');
 	while($donnees = $reponse -> fetch())
 	{
-		?><li><a href=<?php echo $donnees['sectionname'].'.php'.'?'.'id='.$donnees['sectionname']; ?>><?php echo $donnees['sectionname']; ?></a></li>
-<?php	}
+			echo "<li><a href=\"$donnees['Sectionname'].php\">$donnees['Sectionname']</a></li>";
+	}
 	$reponse->closeCursor();
 	?>
 	echo "</ul>";
