@@ -1,6 +1,6 @@
 <?php
 	require_once 'model/PDO.php';
-	require_once 'model/newthread.php';
+	//require_once 'model/newthread.php';
 	function redirect() {
 		header('Location: accueil.php');
 	}
