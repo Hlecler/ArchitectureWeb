@@ -2,18 +2,18 @@
 	require_once 'model/PDO.php';
 	
 	function redirect() {
-		header('Location: accueil.php');
+		header('Location: section.php?=$_GET['idsection']);
 	}
 	
 	$subject = $_POST['subject'];
 	$message = $_POST['message'];
+	$idsection = $_GET['idsection'];
 	
 	if(empty($subject) or empty($message)) {
 		redirect();
 	}
 	
-	$dbSection = connect();
-	$query = $dbSection->query('INSERT INTO Thread (Title, Content) VALUES (\''.$subject.'\', \''.$message.'\');');
-	$query->closeCurator()
+	$dbquery = connect();
+	$dbquery->exec('INSERT INTO Thread(Title, Content, idsection) VALUES (\'.$subject.', \'.$message.','.$idsection.'\');');
 	
 	redirect();
