@@ -10,12 +10,12 @@
 	$idsec = $_GET['idsection'];
 	
 	if(empty($subject) or empty($message)) {
-		echo 'test';
-		redirect();
+		echo 'test1';
+		//redirect();
 	}
 	
 	$dbquery = connect();
 	$dbquery->exec('INSERT INTO thread(Title, Content, Idsection) VALUES ($subject, $message, $idsec)');
-	
+	echo 'test2';
 	//redirect();
 ?>
