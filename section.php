@@ -10,9 +10,10 @@
 	}
 	$reponse = $bdSection->query('SELECT * FROM section');
 	while($donnees = $reponse -> fetch())
-	{
-			echo "<li><a href=\"$donnees['sectionname'].php\">$donnees['sectionname']</a></li>";
-	}
+	{?>
+			<li><a href=<?php echo $donnees['sectionname'].'.php'.'?'.'id='.$donnees['sectionname']; ?>><?php echo $donnees['sectionname']; ?></a></li>
+
+<?php	}
 	$reponse->closeCursor();
 	echo "</ul>";
 ?>
