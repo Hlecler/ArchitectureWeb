@@ -29,12 +29,11 @@ li{
 {
     outline-style: solid;
     outline-color: blue;
-    outline-width: 2px;
+    outline-width: 1px;
+    padding: 2px;
 }
 
 .desc
 {
-    outline-style: dotted;
-    outline-color: blue;
-    outline-width: 1px;
+
 }
