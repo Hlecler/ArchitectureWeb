@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Description" content="Imageboard based website created for a web architecture project by LECLER Hugo">
 <link rel="stylesheet" type="text/css" href="css/styles.css">
-<title>CodeAnon - General</title>
+<title>CodeAnon - Section</title>
 
 
 </head>
