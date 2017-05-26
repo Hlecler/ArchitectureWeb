@@ -7,6 +7,7 @@ function connect()
 	}
 	catch (Exception $e)
 	{
+			echo 'test';
 			die('Erreur : ' . $e->getMessage());
 	}
 	return($bd);
