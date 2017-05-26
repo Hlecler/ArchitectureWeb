@@ -27,9 +27,14 @@ li{
 
 .post
 {
+    outline-style: double;
+    outline-color: green;
+    outline-width: 5px;
 }
 
 .desc
 {
-
+    outline-style: double;
+    outline-color: blue;
+    outline-width: 3px;
 }
