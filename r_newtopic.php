@@ -12,7 +12,6 @@
 	if(empty($subject) or empty($message)) {
 		redirect();
 	}
-	$dbquery = connect();
 	newthread($subject, $message, $idsec);
 	redirect();
 ?>
