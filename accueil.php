@@ -24,7 +24,7 @@
 
 <body>
   
-<?php include('header.php');?>
+<?php include'header.php';?>
   
 <h2> Présentation </h2>
 <p> CodeAnon est un forum permettant de communiquer simplement et anonymement avec d'autres utilisateurs. Pas besoin de s'inscrire, il vous suffit de cliquer sur l'une des sections ci-dessous, et de créer un sujet de discussion ou de répondre à un sujet déjà existant. Pensez à lire les <a href ="regles.html">règles</a> avant de procéder, et de lire la <a href ="FAQ.html">FAQ</a> pour plus d'informations.
@@ -32,7 +32,7 @@
 <h2> Liste des sections </h2>
   
 <?php 
-  include('sectionlist.php');
+  include'sectionlist.php';
 ?>
   
 <!-- HTML CODE BELOW -->
@@ -40,7 +40,7 @@
 <!-- END HTML CODE -->
   
 <?php 
-  include('footer.php'); 
+  include'footer.php'; 
 ?>
 
 </body>
