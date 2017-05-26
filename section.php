@@ -12,8 +12,8 @@
 			$dbSection = connect();
 			if(isset($_GET['idsection']))
 			{     
-				$reponse = $dbSection->prepare('SELECT * FROM Thread WHERE Idsection = ?');
-				$reponse->execute(array($_GET['idsection']));
+				$ans = $dbSection->prepare('SELECT * FROM Thread WHERE Idsection = ?');
+				$ans->execute(array($_GET['idsection']));
 			}
 ?>
 </head>
@@ -23,11 +23,11 @@
 <?php
  	include 'headersection.php';
 	include 'header.php';
-  	while($donnees = $reponse->fetch())
+  	while($donnees = $ans->fetch())
 	{
 		echo $donnees['Title'].':'.$donnees['Content'];
  	}
-	$reponse->closeCursor();
+	$ans->closeCursor();
 	include 'footer.php';
 ?>
 </body>
