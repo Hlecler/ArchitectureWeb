@@ -29,7 +29,7 @@
 <h2> Liste des sections </h2>
 
 <?php 
-  file_get_contents('section.php');
+  include('section.php');
 ?>
   
 <!-- HTML CODE BELOW -->
@@ -37,7 +37,7 @@
 <!-- END HTML CODE -->
   
 <?php 
-  file_get_contents('footer.php'); 
+  include('footer.php'); 
 ?>
 
 </body>
