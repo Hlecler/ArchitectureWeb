@@ -1,21 +1,15 @@
 <link rel="stylesheet" type="text/css" href="css/headersection.css">
 
-<body>
-<?php 
-$listsection = array('General','Aide','Divers','FAQ'); 
-affichersection($listsection);
-
-echo '<br />';
-
-function affichersection($listsection)
-{
+<?php
 	echo "<ul class=\"section\">";
-	foreach($listsection as $element)
-	{
-		echo "<li><a href=\"$element.php\">$element</a></li>";
-	}
-	echo "</ul>";
-}
+	require_once 'model/PDO.php';
+	$bdSection = connect();
+	$reponse = $bdSection->query('SELECT * FROM section');
+	while($donnees = $reponse -> fetch())
+	{?>
+			<li><a href=<?php echo $donnees['sectionname'].'.php'.'?'.'id='.$donnees['sectionname']; ?>><?php echo $donnees['sectionname']; ?></a></li>
 
+<?php	}
+	$reponse->closeCursor();
+	echo "</ul>";
 ?>
-</body>
