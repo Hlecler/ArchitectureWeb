@@ -1,4 +1,6 @@
 <?php
+	require_once('model/PDO.php');
+	$bdSection = connect();
 	echo "<ul class=\"section\">";
 	require_once 'model/PDO.php';
 	$bdSection = connect();
