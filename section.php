@@ -25,7 +25,9 @@
 	include 'header.php';
   	while($donnees = $ans->fetch())
 	{
-		echo $donnees['Title'].':'.$donnees['Content'];
+		<p class="post">echo $donnees['Title'];</p>
+		<p class="desc">echo $donnees['Content'];</p>
+		<br>
  	}
 	$ans->closeCursor();
 	include 'footer.php';
