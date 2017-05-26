@@ -7,8 +7,7 @@
 <meta name="Description" content="Forum based website created for a web architecture project by LECLER Hugo">
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 <title>CodeAnon - Section</title>
-
-		<?php include 'header.php';
+	
 			if(isset($_GET['idsection']))
 			{
         			$dbSection = connect();        
