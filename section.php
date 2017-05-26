@@ -1,18 +1,24 @@
 <?php 
-$listsection = array('General','Aide','Divers','FAQ'); 
+<?php
+  require_once 'model/Pdo.php';
+  $bdSection = connexion();
+  $listsection = $bd->query('SELECT sectionname from section');
+
 affichersection($listsection);
 
 echo '<br />';
 
 //Permet d'afficher chaque section existante dans une liste html
-function affichersection($section)
+function affichersection($listsection)
 {
 	echo "<ul class=\"section\">";
-	foreach($section as $element)
+	foreach($listsection as $element)
 	{
 		echo "<li><a href=\"$element.php\">$element</a></li>";
 	}
 	echo "</ul>";
 }
+
+$listsection->closeCursor(); // Termine le traitement de la requête
 
 ?>
