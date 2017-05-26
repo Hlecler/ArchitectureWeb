@@ -1,4 +1,3 @@
-<?php 
 <?php
 	echo "<ul class=\"section\">";
 	require_once 'model/PDO.php';
@@ -6,10 +5,10 @@
 	$reponse = $bdd->query('SELECT * FROM section');
 	while($donnees = $reponse -> fetch());
 	{
-	echo "<li><a href=<?php echo "$donnees['sectionname'].php?id=".$donnees['idsection']; </a></li>";
+	echo "<li><a href=<?php echo \"$donnees['sectionname'].php\"; </a></li>";
 	}
 	$reponse->closeCursor();
 	?>
 	echo '</ul>';
-echo '<br />';
+echo '<br/>';
 ?>
