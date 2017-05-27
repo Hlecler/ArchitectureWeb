@@ -11,7 +11,7 @@
 	$idsec = $_POST['idsection'];
 	
 	if(empty($subject) or empty($message)) {
-		redirect($message);
+		redirect($idsec);
 	}
 	
 	newthread($subject, $message, $idsec);
