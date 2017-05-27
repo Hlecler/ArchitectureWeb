@@ -3,6 +3,7 @@
 	//require_once 'model/newthread.php';
 	function redirect($idsection) {
 		header('Location: section.php?idsection='.$idsection);
+		exit;
 	}
 	
 	$subject = $_POST['subject'];
