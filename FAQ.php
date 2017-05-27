@@ -25,6 +25,7 @@
 
 <?php
   include 'headersection.php';
+  include 'header.php';
 ?>
   <p> Rien pour l'instant. </p>
   
