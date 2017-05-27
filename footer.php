@@ -1,4 +1,4 @@
-<footer>
+<footer class="footer">
 <br>
 <p>Site crée dans le cadre d'un projet d'architecture web.</p>
 <img>
