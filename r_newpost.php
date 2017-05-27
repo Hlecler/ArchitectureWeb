@@ -7,7 +7,7 @@
 	
 	$message = $_POST['message'];
 	$idthread = $_GET['idthread'];
-	if(empty($message)) {
+	if(empty($message) or empty($idthread)) {
 		//redirect();
 		echo 'test';
 	}
