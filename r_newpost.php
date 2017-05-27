@@ -4,8 +4,7 @@
 	function redirect($idthread) {
 		header('Location: thread.php?idthread='.$idthread);
 	}
-	$maxId = myPDO()->query('SELECT MAX(idpost) FROM post');
-	$maxId ++;
+
 	$message = $_POST['message'];
 	$idthread = $_POST['idthread'];
 	if(empty($message) or empty($idthread)) {
@@ -14,6 +13,8 @@
 	}
 	
 	$dbnewpost = connect();
+	$maxId = $dbnewpost->query('SELECT MAX(idpost) FROM post');
+	$maxId ++;
 	$dbnewpost->exec("INSERT INTO post VALUES ($maxId, $message,$idthread)");
 	
 	redirect($idthread);
