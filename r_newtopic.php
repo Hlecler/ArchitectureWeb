@@ -2,7 +2,7 @@
 	require_once 'model/PDO.php';
 	require_once 'model/newthread.php';
 	function redirect($idsection) {
-		header('Location: section.php?idsection='.$message);
+		header('Location: section.php?idsection='.$idsection);
 		exit;
 	}
 	
@@ -11,7 +11,7 @@
 	$idsec = $_POST['idsection'];
 	
 	if(empty($subject) or empty($message)) {
-		redirect($idsec);
+		redirect($message);
 	}
 	
 	newthread($subject, $message, $idsec);
