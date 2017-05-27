@@ -2,7 +2,7 @@
 	require_once 'model/PDO.php';
 	
 	function redirect() {
-		header('Location: accueil.php');
+		header('Location: section.php?idsection='.$idthread);
 	}
 	
 	$message = $_POST['message'];
