@@ -35,7 +35,7 @@
   while($donnees = $post->fetch())
 	{
     echo '<br>';
-    echo '<p>',$donnees['Content'].'</p>';
+    echo '<p>'.$donnees['content'].'</p>';
   }
   include 'newpost.php';
   echo '<br>';
