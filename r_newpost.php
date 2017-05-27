@@ -6,13 +6,13 @@
 	}
 	
 	$message = $_POST['message'];
-	$idthread = $_POST['idthread'];
+	$idthread = $_POST['idthread1'];
 	if(empty($message) or empty($idthread)) {
 		redirect();
 	}
 	
 	$dbnewpost = connect();
-	$dbnewpost->exec('INSERT INTO Post(Content,idthread) VALUES ($message,$idthread)');
+	$dbnewpost->exec('INSERT INTO Post(Content,Idthread) VALUES ($message,$idthread)');
 	
 	redirect();
 ?>
