@@ -6,13 +6,12 @@
 	}
 	
 	$message = $_POST['message'];
-	
+	$idthread = $_GET['idthread']
 	if(empty($message)) {
 		redirect();
 	}
 	
-	$dbSection = connect();
-	$query = $dbSection->query('INSERT INTO Post (Content) VALUES (\''.$message.'\');');
-	$query->closeCurator()
+	$dbnewpost = connect();
+	$dbnewpost->exec('INSERT INTO Post(Content,Idthread) VALUES ($message,$idthread)');
 	
 	redirect();
