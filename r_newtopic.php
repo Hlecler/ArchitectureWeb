@@ -1,8 +1,8 @@
 <?php
 	require_once 'model/PDO.php';
 	//require_once 'model/newthread.php';
-	function redirect() {
-		header('Location: section.php?idsection='.$_POST['idsection']);
+	function redirect($idsection) {
+		header('Location: section.php?idsection='.$idsection);
 	}
 	
 	$subject = $_POST['subject'];
@@ -10,11 +10,11 @@
 	$idsec = $_POST['idsection'];
 	
 	if(empty($subject) or empty($message)) {
-		redirect();
+		redirect($idsec);
 	}
 	
 	//newthread($subject, $message, $idsec);
 	$dbquery = connect();
 	$dbquery->exec('INSERT INTO Thread (Title, Content, idsection) VALUES ($subject, $message, $idsec)');
-	redirect();
+	redirect($idsec);
 ?>
