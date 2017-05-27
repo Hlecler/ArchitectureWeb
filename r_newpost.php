@@ -8,12 +8,11 @@
 	$message = $_POST['message'];
 	$idthread = $_POST['idthread'];
 	if(empty($message) or empty($idthread)) {
-		//redirect();
-		echo 'test';
+		redirect();
 	}
 	
 	$dbnewpost = connect();
-	$dbnewpost->exec('INSERT INTO Post(Content,Idthread) VALUES ($message,$idthread)');
+	$dbnewpost->exec('INSERT INTO Post(Content,idthread) VALUES ($message,$idthread)');
 	
-	//redirect();
+	redirect();
 ?>
