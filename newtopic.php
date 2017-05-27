@@ -3,7 +3,7 @@
 			<br/>
 			<b>Message<br></b>
 			<textarea name="message" form="newtopicform">Your Message</textarea>
-			<input type='hidden' name="idsection" value=" <?php echo $_GET['idsection']; ?> " />
+			<input type='hidden' name="idsection" value="<?php echo $_GET['idsection']; ?> " />
 			<br/>
 			<input type="submit" value="Envoyer">
 		</form>
