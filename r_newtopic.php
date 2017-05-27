@@ -2,7 +2,7 @@
 	require_once 'model/PDO.php';
 	require_once 'model/newthread.php';
 	function redirect($idsection) {
-		header('Location: section.php?idsection='.$idsection);
+		header('Location: section.php?idsection='.$message);
 		exit;
 	}
 	
