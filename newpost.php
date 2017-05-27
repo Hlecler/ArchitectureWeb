@@ -2,6 +2,6 @@
 			<b>Answer?:<br></b>
 			<textarea name="message" form="newpostform">Your Message...</textarea>
 			<br/>
-			<input type='hidden' name="idthread" value="<?php echo $_GET['idthread']; ?> " />
+			<input type='hidden' name="idthread" value="<?php echo $_GET['idthread']; ?>" />
 			<input type="submit" value="Envoyer">
 		</form>
