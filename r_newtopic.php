@@ -8,14 +8,14 @@
 	
 	$subject = $_POST['subject'];
 	$message = $_POST['message'];
-	$idsec = $_POST['idsection'];
+	$idsection = $_POST['idsection'];
 	
 	if(empty($subject) or empty($message)) {
-		redirect($idsec);
+		redirect($idsection);
 	}
 	
-	newthread($subject, $message, $idsec);
+	newthread($subject, $message, $idsection);
 	//$dbquery = connect();
-	//$dbquery->exec('INSERT INTO thread(Title, Content, Idsection) VALUES ($subject, $message, $idsec)');
-	redirect($idsec);
+	//$dbquery->exec('INSERT INTO thread(Title, Content, Idsection) VALUES ($subject, $message, $idsection)');
+	redirect($message);
 ?>
