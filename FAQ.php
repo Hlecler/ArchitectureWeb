@@ -29,12 +29,11 @@
 <body>
 
 <?php
-  include("headersection.php");
+  include 'headersection.php';
 ?>
-<!-- HTML CODE BELOW -->
-
-<!-- END HTML CODE -->
+  <p> Rien pour l'instant. </p>
+  
 <?php 
-  include("footer.php");
+  include 'footer.php';
 ?>
 </body>
