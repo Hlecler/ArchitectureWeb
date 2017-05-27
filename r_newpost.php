@@ -15,7 +15,7 @@
 	$dbnewpost = connect();
 	$maxId = $dbnewpost->query('SELECT MAX(idpost) FROM post');
 	$maxId ++;
-	$dbnewpost->exec('INSERT INTO post VALUES (maxId, $message,$idthread)');
+	$dbnewpost->exec('INSERT INTO post VALUES ($maxId, $message,$idthread)');
 	
 	redirect($idthread);
 ?>
