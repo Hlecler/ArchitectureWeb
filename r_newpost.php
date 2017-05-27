@@ -1,6 +1,11 @@
 <?php
 	require_once 'model/PDO.php';
 	
+	function IdMax() {
+        	$maxId = connect()->query('SELECT MAX(idpost) FROM post');
+        	return $maxId->fetch()[0];
+    	}
+
 	function redirect($idthread) {
 		header('Location: thread.php?idthread='.$idthread);
 	}
@@ -13,9 +18,8 @@
 	}
 	
 	$dbnewpost = connect();
-	$maxId = $dbnewpost->query('SELECT MAX(idpost) FROM post');
-	$maxId[0] ++;
-	$dbnewpost->exec('INSERT INTO post VALUES ($maxId[0], $message,$idthread)');
+	$Idpost = $this->IdMax() + 1;
+	$dbnewpost->exec('INSERT INTO post VALUES ($Idpost, $message,$idthread)');
 	
 	redirect($idthread);
 ?>
