@@ -6,7 +6,7 @@
 	}
 	
 	$message = $_POST['message'];
-	$idthread = $_GET['idthread']
+	$idthread = $_GET['idthread'];
 	if(empty($message)) {
 		redirect();
 	}
@@ -15,3 +15,4 @@
 	$dbnewpost->exec('INSERT INTO Post(Content,Idthread) VALUES ($message,$idthread)');
 	
 	redirect();
+?>
