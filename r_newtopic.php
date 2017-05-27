@@ -16,6 +16,6 @@
 	
 	//newthread($subject, $message, $idsec);
 	$dbquery = connect();
-	$dbquery->exec('INSERT INTO Thread (Title, Content, idsection) VALUES ($subject, $message, $idsec)');
+	$dbquery->exec('INSERT INTO Thread (Title, Content, idsection) VALUES ($subject, $message, '1')');
 	redirect($idsec);
 ?>
