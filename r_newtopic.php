@@ -7,7 +7,7 @@
 	
 	$subject = $_POST['subject'];
 	$message = $_POST['message'];
-	$idsec = $_GET['idsection'];
+	$idsec = $_POST['idsection'];
 	
 	if(empty($subject) or empty($message)) {
 		redirect();
