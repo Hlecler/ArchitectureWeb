@@ -28,7 +28,8 @@
 	include 'header.php';
   while($donnees = $first->fetch())
 	{
-    echo '<h1>'.$donnees['Title'].'</h1>';
+	  echo '<br>';
+    echo '<h4>'.$donnees['Title'].'</h4>';
     echo '<p>'.$donnees['Content'].'</p>';
   }  
   while($donnees = $post->fetch())
