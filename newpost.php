@@ -3,4 +3,5 @@
 			<textarea name="message" form="newpostform">Your Message...</textarea>
 			<br/>
 			<input type="submit" value="Envoyer">
+			<input type='hidden' name='idthread' value='<?php echo "$_GET['idthread']";?>'/>
 		</form>
