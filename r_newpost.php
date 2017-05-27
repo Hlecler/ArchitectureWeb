@@ -19,7 +19,7 @@
 	echo 'test1';
 	$dbnewpost = connect();
 	echo 'test2';
-	$Idpost->IdMax() + 1;
+	$Idpost =IdMax() + 1;
 	echo 'test3';
 	$dbnewpost->exec('INSERT INTO post VALUES ($Idpost, $message,$idthread)');
 	
