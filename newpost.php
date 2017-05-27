@@ -1,4 +1,4 @@
-		<form id="newpostform" action="/r_post.php" method="post">
+		<form id="newpostform" action="/r_newpost.php" method="post">
 			<b>Message<br></b>
 			<textarea name="message" form="newpostform">Your Message...</textarea>
 			<br/>
