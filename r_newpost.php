@@ -16,9 +16,11 @@
 		redirect($idthread);
 
 	}
-	
+	echo 'test1';
 	$dbnewpost = connect();
+	echo 'test2';
 	$Idpost = $this->IdMax() + 1;
+	echo 'test3';
 	$dbnewpost->exec('INSERT INTO post VALUES ($Idpost, $message,$idthread)');
 	
 	redirect($idthread);
