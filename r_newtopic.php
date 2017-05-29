@@ -13,12 +13,12 @@
 	echo $idsection;
 	echo $subject;
 	echo $message;
-	/*if(empty($subject) or empty($message)) {
+	if(empty($subject) or empty($message)) {
 		redirect($idsection);
 	}
 	
-	newthread($subject, $message, $idsection);
-	//$dbquery = connect();
-	//$dbquery->exec('INSERT INTO thread VALUES ($subject, $message, $idsection)');
+	//newthread($subject, $message, $idsection);
+	$dbquery = connect();
+	$dbquery->exec('INSERT INTO thread VALUES ($subject, $message, $idsection)');
 	redirect($idsection);*/
 ?>
