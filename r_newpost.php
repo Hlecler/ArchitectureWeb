@@ -16,9 +16,10 @@
 	if(empty($message) or empty($idthread)) {
 		redirect($idthread);
 	}
-	$test = 'INSERT INTO Post (idpost, content, idthread) VALUES (".$idpost.",\'".$message."\',".$idthread.")';
-	echo "INSERT INTO Post (idpost, content, idthread) VALUES (".$idpost.",\'".$message."\',".$idthread.")";
+	//$test = 'INSERT INTO Post (idpost, content, idthread) VALUES (".$idpost.",\'".$message."\',".$idthread.")';
+	//echo "INSERT INTO Post (idpost, content, idthread) VALUES (".$idpost.",\'".$message."\',".$idthread.")";
+	
 	$dbnewpost = connect();
-	$dbnewpost->exec($test);
+	$dbnewpost->exec('INSERT INTO a VALUES ("a")');
 	//redirect($idthread);
 ?>
