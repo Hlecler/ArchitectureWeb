@@ -10,12 +10,13 @@
 	$idthread = $_POST['idthread'];
 
 	$idmax = connect()->query('SELECT MAX(idpost) FROM post');
-        $idpost = $idmax->fetch()[0] +1;
+        $idpost = $idmax->fetch()[0];
+	$idpost = $idpost +1;
 
 	if(empty($message) or empty($idthread)) {
 		redirect($idthread);
 	}
 	$dbnewpost = connect();
-	$dbnewpost->exec('INSERT INTO Post (idpost) VALUES ($idpost)');
+	$dbnewpost->exec('INSERT INTO Post (idpost, content, idthread) VALUES ('.$idpost.','.$message.','.$idthread.')');
 	redirect($idthread);
 ?>
