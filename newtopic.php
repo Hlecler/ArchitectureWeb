@@ -1,3 +1,4 @@
+		<p> To create a new thread: </p>
 		<form id="newtopicform" action="/r_newtopic.php" method="post">
 			<b>Sujet:<br> </b><input type="text" name="subject" placeholder="Enter a title"><br />
 			<br/>
