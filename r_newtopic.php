@@ -8,7 +8,7 @@
 	$subject = $_POST['subject'];
 	$message = $_POST['message'];
 	$idsection = $_POST['idsection'];
-	$idmax = connect()->query('SELECT MAX(idsection) FROM thread');
+	$idmax = connect()->query('SELECT MAX(idthread) FROM thread');
         $idthread = $idmax->fetch()[0];
 	$idthread = $idthread +1;
 
