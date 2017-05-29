@@ -10,6 +10,9 @@
 	$message = $_POST['message'];
 	$idsection = $_POST['idsection'];
 	
+	echo $idsection;
+	echo $subject;
+	echo $message;
 	if(empty($subject) or empty($message)) {
 		redirect($idsection);
 	}
