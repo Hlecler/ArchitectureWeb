@@ -21,6 +21,8 @@
 	//$test = "INSERT INTO Thread (idthread, idsection) VALUES (5,5)";
  	$test = "INSERT INTO Thread (idthread, idsection) VALUES (".$idthread.", ".$idsection.")";
 	echo $test;
+	echo '<br>';
+	echo "INSERT INTO Thread (idthread, idsection) VALUES (5,5)";
 	//$test = "INSERT INTO Thread (idthread, title, content, idesction) VALUES (5, /"ab/", /"bc/", 5);";
 
 	//$test = "INSERT INTO Thread (idthread, title, content, idsection) VALUES (5,'ab','cd',5)";
