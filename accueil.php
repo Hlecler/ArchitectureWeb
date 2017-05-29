@@ -4,7 +4,7 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="Description" content="Imageboard based website created for a web architecture project by LECLER Hugo">
+<meta name="Description" content="Forum created for a web architecture project by LECLER Hugo">
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 <title>CodeAnon - Accueil</title>
 
@@ -27,17 +27,16 @@
 <?php include'header.php';?>
   
 <h2> Présentation </h2>
-<p> CodeAnon est un forum permettant de communiquer simplement et anonymement avec d'autres utilisateurs. Pas besoin de s'inscrire, il vous suffit de cliquer sur l'une des sections ci-dessous, et de créer un sujet de discussion ou de répondre à un sujet déjà existant. Pensez à lire les <a href ="regles.php">règles</a> avant de procéder, et de lire la <a href ="FAQ.php">FAQ</a> pour plus d'informations.
+<p> CodeAnon est un forum permettant de communiquer simplement et anonymement avec d'autres utilisateurs.
+  <br>Pas besoin de s'inscrire, il vous suffit de cliquer sur l'une des sections ci-dessous,
+  <br> et de créer un sujet de discussion ou de répondre à un sujet déjà existant. 
+  <br>Pensez à lire les <a href ="regles.php">règles</a> avant de procéder, et de lire la <a href ="FAQ.php">FAQ</a> pour plus d'informations.
 
 <h2> Liste des sections </h2>
   
 <?php 
   include'sectionlist.php';
 ?>
-  
-<!-- HTML CODE BELOW -->
-
-<!-- END HTML CODE -->
   
 <?php 
   include'footer.php'; 
