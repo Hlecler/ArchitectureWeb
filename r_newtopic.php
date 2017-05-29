@@ -9,7 +9,8 @@
 	$message = $_POST['message'];
 	$idsection = $_POST['idsection'];
 	$idmax = connect()->query('SELECT MAX(idsection) FROM thread');
-        $idthread = $idmax->fetch()[0] +1;
+        $idthread = $idmax->fetch()[0];
+	$idthread = $idthread +1;
 
 	if(empty($subject) or empty($message)) {
 		redirect($idsection);
