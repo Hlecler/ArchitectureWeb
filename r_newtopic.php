@@ -20,7 +20,7 @@
 	//$dbquery->exec('UPDATE Thread SET idsection = 1 WHERE idsection = 3');
 	//$dbquery->exec('DELETE FROM Thread WHERE idthread = 3');
 	//$test = "INSERT INTO Thread (idthread, idsection) VALUES (5,5)";
- 	$test = 'INSERT INTO Thread (idthread, title, content, idsection) VALUES ('.$idthread.',\''.$subject.'\',\''.$message.'\','.$idthread.')';
+ 	$test = '\'INSERT INTO Thread (idthread, title, content, idsection) VALUES ('.$idthread.',\''.$subject.'\',\''.$message.'\','.$idthread.')\'';
 	//$test = "INSERT INTO Thread (idthread, title, content, idsection) VALUES (5, \"ab\", \"bc\", 5)";
 	echo $test;
 	echo '<br>';
@@ -28,6 +28,6 @@
 
 	//$test = "INSERT INTO Thread (idthread, title, content, idsection) VALUES (5,'ab','cd',5)";
         //$sql = "INSERT INTO Thread VALUES (:idthread, :idsection)";
-	$dbquery->exec('\''.$test.'\'');
+	$dbquery->exec($test);
 	//redirect($idsection);
 ?>
