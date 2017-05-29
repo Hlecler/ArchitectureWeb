@@ -16,7 +16,7 @@
 
 	public function newthread($Title, $Content, $idsection) {
         $idthread = $this->IdMax() + 1;
-        $code = "INSERT INTO songs VALUES (:idthread, :title, :content, :idsection)";
+        $code = "INSERT INTO thread VALUES (:idthread, :title, :content, :idsection)";
         $req = connect()->prepare($code);
         $params = [
           ':idthread' => $idthread,
