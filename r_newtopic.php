@@ -14,7 +14,7 @@
 	echo $subject;
 	echo $message;
 	$idmax = connect()->query('SELECT MAX(idsection) FROM thread');
-        $idthread = $idmax->fetch()[0];
+        $idthread = $idmax->fetch()[0] +1;
 	echo $idthread;
 	if(empty($subject) or empty($message)) {
 		redirect($idsection);
