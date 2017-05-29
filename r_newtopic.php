@@ -19,7 +19,8 @@
 	$dbquery = connect();
 	//$dbquery->exec('UPDATE Thread SET idsection = 1 WHERE idsection = 3');
 	//$dbquery->exec('DELETE FROM Thread WHERE idthread = 3');
-	$test = 'INSERT INTO Thread VALUES ($idthread, $subject, $message, $idsection)';
+	//$test = 'INSERT INTO Thread VALUES ($idthread, $subject, $message, $idsection)';
+	$test = 'INSERT INTO Thread (idthread) VALUES (1)';
 	$dbquery->exec($test);
 	redirect($idsection);
 ?>
