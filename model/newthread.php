@@ -14,7 +14,7 @@
         	return $idmax->fetch()[0];
 	}
 
-	public function newthread($Title, $Content, $idsection) {
+	function newthread($Title, $Content, $idsection) {
         $idthread = $this->IdMax() + 1;
         $code = "INSERT INTO thread VALUES (:idthread, :title, :content, :idsection)";
 	$params = [
