@@ -24,3 +24,5 @@
           ':content' => $Content,
           ':idsection' => $idsection
         ];
+        $req->execute($params);
+    	}
