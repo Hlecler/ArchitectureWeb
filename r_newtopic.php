@@ -28,6 +28,6 @@
 
 	//$test = "INSERT INTO Thread (idthread, title, content, idsection) VALUES (5,'ab','cd',5)";
         //$sql = "INSERT INTO Thread VALUES (:idthread, :idsection)";
-	$dbquery->exec('INSERT INTO Thread (idthread, title, content, idsection) VALUES ('.$idthread.',\''.$subject.'\',\''.$message.'\','.$idthread.')');
+	$dbquery->exec("INSERT INTO Thread (idthread, title, content, idsection) VALUES (5, \"ab\", \"bc\", 5)");
 	//redirect($idsection);
 ?>
