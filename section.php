@@ -12,7 +12,7 @@
 			$dbSection = connect();
 			if(isset($_GET['idsection']))
 			{     
-				$ans = $dbSection->prepare('SELECT * FROM Thread WHERE Idsection = ?');
+				$ans = $dbSection->prepare('SELECT * FROM Thread WHERE Idsection = ? ORDER BY Idthread DESC');
 				$ans->execute(array($_GET['idsection']));
 			}
 ?>
