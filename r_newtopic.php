@@ -13,12 +13,15 @@
 	echo $idsection;
 	echo $subject;
 	echo $message;
+	$idmax = connect()->query('SELECT MAX(idsection) FROM thread');
+        $idmax->fetch()[0];
+	echo $idmax;
 	if(empty($subject) or empty($message)) {
 		redirect($idsection);
 	}
 	
 	newthread($subject, $message, $idsection);
-	//$dbquery = connect();
-	//$dbquery->exec('INSERT INTO thread VALUES (1, $subject, $message, $idsection)');
+	$dbquery = connect();
+	$dbquery->exec('INSERT INTO thread VALUES (1, $subject, $message, $idsection)');
 	//redirect($idsection);
 ?>
