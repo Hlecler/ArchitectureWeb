@@ -15,5 +15,9 @@
           ':content' => $Content,
           ':idsection' => $idsection
         ];
+	echo $idthread;
+	echo $Title;
+	echo $Content;
+	echo $idsection;
 	$req->execute($params);
     	}
