@@ -16,6 +16,6 @@
 		redirect($idthread);
 	}
 	$dbnewpost = connect();
-	$dbnewpost->exec('INSERT INTO post VALUES ($idpost,$message,$idthread)');
+	$dbnewpost->exec('INSERT INTO Post VALUES ($idpost,$message,$idthread)');
 	redirect($idthread);
 ?>
