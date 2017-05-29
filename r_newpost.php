@@ -18,8 +18,8 @@
 	}
 	//$test = 'INSERT INTO Post (idpost, content, idthread) VALUES (".$idpost.",\'".$message."\',".$idthread.")';
 	//echo "INSERT INTO Post (idpost, content, idthread) VALUES (".$idpost.",\'".$message."\',".$idthread.")";
-	echo 'INSERT INTO a VALUES ("a")';
+	echo "INSERT INTO a VALUES ('a')";
 	$dbnewpost = connect();
-	$dbnewpost->exec('INSERT INTO a VALUES ("a")');
+	$dbnewpost->exec("INSERT INTO a VALUES ('a')");
 	//redirect($idthread);
 ?>
