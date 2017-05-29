@@ -18,6 +18,6 @@
 	}
 	echo "INSERT INTO Post (idpost, content, idthread) VALUES (".$idpost.",".$message.",".$idthread.")";
 	$dbnewpost = connect();
-	$dbnewpost->exec('INSERT INTO Post (idpost, content, idthread) VALUES ('.$idpost.','.$message.','.$idthread.')');
+	$dbnewpost->exec("INSERT INTO Post (idpost, content, idthread) VALUES ('.$idpost.',\''.$message.'\','.$idthread.')");
 	//redirect($idthread);
 ?>
