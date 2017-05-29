@@ -5,6 +5,7 @@
 	}
 
 	function newthread($Title, $Content, $idsection) {
+	require_once 'PDO.php';
         $idthread = $this->IdMax() + 1;
         $code = "INSERT INTO thread VALUES (:idthread, :title, :content, :idsection)";
 	$req = connect()->prepare($code);
