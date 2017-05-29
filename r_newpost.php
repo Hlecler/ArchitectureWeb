@@ -15,7 +15,7 @@
 	if(empty($message) or empty($idthread)) {
 		redirect($idthread);
 	}
-
+	$dbh->beginTransaction();
 	$dbnewpost = connect();
 	$dbnewpost->exec('INSERT INTO post VALUES ($IdPost,$message,$idthread)');
 	$dbnewpost->commit();
