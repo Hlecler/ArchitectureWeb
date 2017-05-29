@@ -20,10 +20,11 @@
 	//$dbquery->exec('DELETE FROM Thread WHERE idthread = 3');
 	//$test = "INSERT INTO Thread (idthread, idsection) VALUES (5,5)";
  	$test = "INSERT INTO Thread (idthread, idsection) VALUES (".$idthread.", ".$idsection.")";
+	echo $test;
 	//$test = "INSERT INTO Thread (idthread, title, content, idesction) VALUES (5, /"ab/", /"bc/", 5);";
 
 	//$test = "INSERT INTO Thread (idthread, title, content, idsection) VALUES (5,'ab','cd',5)";
         //$sql = "INSERT INTO Thread VALUES (:idthread, :idsection)";
 	$dbquery->exec($test);
-	redirect($idsection);
+	//redirect($idsection);
 ?>
