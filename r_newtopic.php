@@ -17,7 +17,7 @@
 	}
 	
 	$dbquery = connect();
-	$dbquery->exec("INSERT INTO Thread VALUES (6,ab,cd,1)");
-	//$dbquery->exec("INSERT INTO Thread VALUES ($idthread,$subject,$message,$idsection)");
+	$dbquery->exec('UPDATE Thread SET idsection = 1 WHERE idsection = 3');
+	//$dbquery->exec('INSERT INTO Thread VALUES ($idthread,$subject,$message,$idsection)');
 	redirect($idsection);
 ?>
