@@ -17,8 +17,8 @@
 		redirect($idsection);
 	}
 	
-	//newthread($subject, $message, $idsection);
-	$dbquery = connect();
-	$dbquery->exec('INSERT INTO thread VALUES (1, $subject, $message, $idsection)');
-	redirect($idsection);
+	newthread($subject, $message, $idsection);
+	//$dbquery = connect();
+	//$dbquery->exec('INSERT INTO thread VALUES (1, $subject, $message, $idsection)');
+	//redirect($idsection);
 ?>
