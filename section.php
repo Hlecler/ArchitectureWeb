@@ -23,7 +23,9 @@
 <?php
  	include 'headersection.php';
 	include 'header.php';
-  	include 'newtopic.php';
+  	include 'newtopic.php';?>
+	<h1>Liste des sujets disponibles</h1>
+	<?php
 	while($donnees = $ans->fetch())
 	{
 		echo '<p class="post"><a href="thread.php?idthread='.$donnees['idthread'].'">'.$donnees['Title'].'</a></p>';
