@@ -24,7 +24,7 @@
  	include 'headersection.php';
 	include 'header.php';
   	include 'newtopic.php';?>
-	<h5 class="titre">Liste des sujets disponibles</h5>
+	<h4 class="titre">Liste des sujets disponibles</h4>
 	<?php
 	while($donnees = $ans->fetch())
 	{
